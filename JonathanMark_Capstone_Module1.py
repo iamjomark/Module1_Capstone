@@ -378,7 +378,7 @@ def commence_strike():
         print(f"Password verification failed! Attempt {attempts_pw}/3.")
     else:
         print("Too many failed attempts. Exiting.")
-        return
+        exit()
     # Launch code check with 3 tries
     attempts_code = 0
     while attempts_code < 3:
@@ -389,7 +389,7 @@ def commence_strike():
         print(f"Launch code invalid! Attempt {attempts_code}/3.")
     else:
         print("Too many failed attempts. Exiting.")
-        return
+        exit()
 
     # Execution
     selected_unit = available_units[unit_choice]
